@@ -1,2 +1,2 @@
 # WebProjects
-This is my first git repository
+Want to become a creative Web Developer
