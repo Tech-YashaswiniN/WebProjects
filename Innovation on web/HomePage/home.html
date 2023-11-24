@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@300;400;500;600;700&family=Philosopher&family=Poppins&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MotorService</title>
+    <link rel="icon" href="FaviconBike.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <!--logo container-->
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+
+                </div>
+            </div>
+
+            <!--nav-info-->
+            <div class="nav-info">
+                <a href="http://127.0.0.1:5500/HomePage/home.html">Home</a>
+                <a href="http://127.0.0.1:5500/About-us/Aboutus.html">About us</a>
+                <a href="http://127.0.0.1:5500/BikeService/BikeService.html">Book a Service</a>
+                <a href="http://127.0.0.1:5500/offers/offers.html">Offers</a>
+                <a href="http://127.0.0.1:5500/Contact%20us/contactus.html">Contact us</a>
+                <a href="#">Infora</a>
+            </div>
+            <div class="nav-icons">
+                <a href="http://127.0.0.1:5500/login/login.html"> <i class="fa-regular fa-user"
+                        style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-regular fa-bell" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="panel">
+        <marquee behavior="" direction="left">Customer Satisfaction Is Our Aim</marquee>
+    </div>
+    <main>
+
+        <!-- <div class="image-slideshow">
+
+        </div> -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="BANNER-11.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="BANNER-12.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="BANNER-13.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <div class="container">
+            <div class="main-content1">
+                <div class="card-content1">
+                    <div class="card-content1-overlay">
+                        <div class="Shree-Raksha-info">
+                            <h1>Shree Raksha Motors</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero illo
+                                molestias
+                                perferendis, magnam hic exercitationem! Rem corrupti vitae unde nostrum eius ipsum,
+                                maxime voluptatibus quas voluptates aperiam vel deleniti facere rerum expedita cum
+                                veniam sequi ducimus cumque reiciendis itaque molestiae. Numquam tempora deleniti,
+                                expedita ratione dolores soluta accusantium dolor nihil? Libero dolorem eum
+                                praesentium
+                                expedita officiis. Eius, hic eligendi!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content2">
+                    <img src="2Bikefffinal.png" alt="bikeimg">
+                </div>
+            </div>
+            <div class="main-content2">
+                <h1>Our Services</h1>
+                <p>Our service serves you with the best quality! Our two-wheelers multi-brand repair, fix, and servicing
+                    <br> is always there to help you on the go.
+                </p>
+                <div class="content2">
+                    <div class="Bike-service">
+                        <img src="foamWash.jpg" alt="img">
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit voluptatem quis
+                                totam
+                                mollitia hic laudantium consequatur iste ex illo?
+                            </p>
+                        </div>
+                        <a href="http://127.0.0.1:5500/BikeService/BikeService.html"><button>Book Now</button></a>
+                    </div>
+                    <div class="Bike-service">
+                        <img src="Breakdown and maintenance .jpg" alt="img">
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit voluptatem quis
+                                totam
+                                mollitia hic laudantium consequatur iste ex illo?
+
+                            </p>
+                        </div>
+                        <a href="http://127.0.0.1:5500/BikeService/BikeService.html"><button>Book Now</button></a>
+                    </div>
+                    <div class="Bike-service">
+                        <img src="More-offers.jpg" alt="img">
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit voluptatem quis
+                                totam
+                                mollitia hic laudantium consequatur iste ex illo?
+                            </p>
+                        </div>
+                        <a href="http://127.0.0.1:5500/offers/offers.html"><button>More offers</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content3">
+                <h1>Quick 3 step booking</h1>
+                <div class="main-content3-info">
+                    <div class="steps-list">
+                        <ul>
+                            <li>Choose the required service</li>
+                            <li>Enter your locality & contact details</li>
+                            <li>Leave the rest to GoBumpr's service experts</li>
+                        </ul>
+                    </div>
+                    <div class="three-step-img">
+                        <img src="threeStepFormFilling.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="main-content4">
+                <h1>Trusted Mechanics</h1>
+                <div class="Machanic-pic-content">
+                    <div class="machanic-img">
+                        <img src="truusted machanics.avif" alt="img">
+                    </div>
+                    <div class="machanic-content">
+                        <ul>
+                            <li>Expert mechanics for your every need</li>
+                            <li>Best-in-class workmanship</li>
+                            <li>Top of the line equipment for the best service experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content5">
+                <div class="mission-card">
+                    <div class="overlay">
+                        <div class="overlay-card">
+                            <h4>why choose us</h4><br>
+                            <h1>MISSION I'M POSSIBLE</h1><br>
+                            <p>Doctor Garage provides online marketing as well as offline (door to door) marketing to
+                                achieve a minimum customer base for our running outlets (Franchises). We Charges ZERO
+                                royalty fees. Provide daily service bookings after a certain period of time. ROI period
+                                12-18 months.</p><br>
+                            <div class="Aboutus-btn">
+                                <a href="http://127.0.0.1:5500/About-us/Aboutus.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first-info">
+                <div class="footer-logo">
+                    <img src="nav-logouppdated.png" alt="img">
+                </div>
+                <div class="footer-brife">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis architecto porro
+                        tempora dicta illum voluptatem?</p>
+                </div>
+            </div>
+
+            <div class="About-us">
+                <h1>ABOUT US</h1>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Book a Service</a></li>
+                </ul>
+            </div>
+
+            <div class="our-services">
+                <h1>OUR SERVICES</h1>
+                <ul>
+                    <li><a href="#">Periodic Services</a></li>
+                    <li><a href="#">Repair Work</a></li>
+                    <li><a href="#">Bike Inspection</a></li>
+                    <li><a href="#">Wash & Care</a></li>
+                </ul>
+            </div>
+
+            <div class="adress-bar">
+                <div class="Location">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="address">
+                        <p>Address</p>
+                        <p>Lorem ipsum dolor, sit <br>amet consectetur <br>adipisicing elit. Esse pariatur <br>dolore
+                            fugit
+                            blanditiis <br> recusandae delectus!</p>
+                    </div>
+                </div>
+                <div class="Email">
+                    <div class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="email-id">
+                        <p>Email</p>
+                        <p>Shreerakshamotors@gmail.com</p>
+                    </div>
+                </div>
+                <div class="call-us">
+                    <div class="call-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="Ph-no">
+                        <p>Call-Us</p>
+                        9557841236
+                    </div>
+                </div>
+                <div class="Follow-us">
+                    <div class="follow-Us-icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="linkdin-name">
+                        <p>Linkdin</p>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

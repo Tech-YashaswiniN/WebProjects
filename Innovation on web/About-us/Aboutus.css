@@ -1,0 +1,505 @@
+/* Header Content */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.navbar {
+    height: 70px;
+    background: linear-gradient(to left, red, black, black, black, red);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-logo {
+    height: 65px;
+    width: 65px;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+    background-image: url("nav-logouppdated.png");
+    background-size: cover;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.nav-info a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0s linear 0.3s;
+}
+
+.nav-info a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 40px;
+}
+
+.aboutcontainer {
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.panel-img {
+    height: 200px;
+    width: 20%;
+    float: right;
+
+}
+
+.panel-img img {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5rem);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -205px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.sub-title {
+    text-align: center;
+    margin: auto;
+    margin-right: 21rem;
+    line-height: 2rem;
+}
+
+.sub-title h3 {
+    font-size: 1.5rem;
+}
+
+.grid-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+.vertical-info h2 {
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #e40c0c;
+    text-shadow: 3px 0px 15px #e40c0c;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.image-grid {
+    height: 630px;
+    width: 720px;
+}
+
+.image-grid img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.content-grid {
+    height: 600px;
+    width: 690px;
+}
+
+.content-grid h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.content-grid p {
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.box3 {
+    width: 95%;
+    margin: auto;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mission h4,
+.vision h4 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #b93027;
+    /* Header text color */
+}
+
+.mission,
+.vision {
+    flex-wrap: wrap;
+    overflow: auto;
+    flex: 1;
+    color: #fff;
+    text-align: justify;
+    width: 50%;
+    height: 250px;
+    padding: 10px 20px;
+    /* Add padding for spacing within divs (left and right) */
+    background-color: #000000;
+    /* Background color for divs */
+    border: 1px solid #940b0b;
+    /* Border for divs */
+    margin: 5px;
+    /* Add margin for spacing between divs */
+}
+
+
+.mission p,
+.vision p {
+    font-size: 16px;
+    /* Paragraph text font size */
+    line-height: 1.5;
+    /* Line height for paragraph text */
+}
+
+.imageservice {
+    height: 30px;
+    width: 20px;
+}
+
+.weserve {
+    display: flex;
+    padding: 25px;
+    background-color: fff;
+    color: #000;
+    font-size: 30px;
+    font-weight: 90px;
+    text-align: center;
+    justify-content: center;
+}
+
+.icon-service {
+
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.bajaj img {
+    height: 200px;
+    width: 150px;
+
+}
+
+.royalenfield img {
+    height: 200px;
+    width: 150px;
+
+}
+
+.suzuki img {
+    height: 200px;
+    width: 150px;
+}
+
+.ktm img {
+    height: 200px;
+    width: 150px;
+}
+
+.honda img {
+    height: 200px;
+    width: 150px;
+}
+
+.mahindra img {
+    height: 200px;
+    width: 150px;
+}
+
+.hero img {
+    height: 200px;
+    width: 150px;
+}
+
+.tvs img {
+    height: 200px;
+    width: 150px;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+
+    background: linear-gradient(to left, red, black, black, black, red);
+    color: white;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+.footer-first-info {
+    height: 400px;
+    width: 400px;
+
+}
+
+.footer-first-info p {
+    padding-top: 1rem;
+}
+
+.footer-first-info .footer-logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.About-us ul {
+    padding-top: 1rem;
+}
+
+.About-us li {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.About-us li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.our-services ul {
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+.our-services h1 {
+    padding-left: 3.7rem;
+}
+
+.our-services li {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.our-services li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.Location {
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.Location .location-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.Email {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.Email .email-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.call-us {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.call-us .call-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.Follow-us {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.Follow-us .follow-Us-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:1193px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-first-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .About-us {
+        border-bottom: 1px solid rgb(123, 118, 118);
+        height: 400px;
+        /* width: 100%; */
+        /* padding-left: 7.8rem; */
+        padding-top: 2rem;
+    }
+
+    .our-services {
+        padding-top: 2.5rem;
+        border-bottom: 1px solid rgb(123, 118, 118);
+        height: 300px;
+    }
+
+    .adress-bar {
+        padding-top: 2rem;
+    }
+}
+
+@media (min-width:100px) and (max-width:1193px) {
+    .mission-card {
+        width: 300px;
+        margin-left: 1rem;
+    }
+
+    .mission-card .overlay {
+        width: 100%;
+    }
+
+    .overlay-card h1 {
+        line-height: 2.5rem;
+    }
+
+    .overlay-card {
+        height: 80%;
+        width: 90%;
+        line-height: 1.6rem;
+    }
+}
+
+@media (max-width: 1193px) {
+    .grid-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .vertical-info h2 {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        text-shadow: none;
+    }
+
+    .image-grid {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-grid img {
+        box-shadow: none;
+    }
+
+    .content-grid {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-grid p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 1193px) {
+    .containers {
+        flex-direction: column;
+    }
+
+    .mission,
+    .vision {
+        width: 100%;
+        margin: 5px 0;
+        height: auto;
+    }
+
+    .mission p,
+    .vision p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1768px) {
+    .weserve {
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .icon-service {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .bajaj img,
+    .royalenfield img,
+    .suzuki img,
+    .ktm img,
+    .honda img,
+    .mahindra img,
+    .hero img,
+    .tvs img {
+        height: 150px;
+        width: 170px;
+        justify-content: space-evenly;
+    }
+}

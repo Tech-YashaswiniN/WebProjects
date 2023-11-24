@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: white;
+    overflow: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/*nav-bar started*/
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    /* background: linear-gradient(to right, rgb(212, 16, 16), black, black, black, rgb(199, 8, 8)); */
+    background: linear-gradient(to left, #DD3333, black, black, black, #DD3333);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.nav-logo {
+    height: 65px;
+    width: 65px;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+    background-image: url("nav-logouppdated.png");
+    background-size: cover;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.nav-info a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0s linear 0.3s;
+}
+
+.nav-info a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 40px;
+}
+
+/*nav-bar ended*/
+
+/*Panel styling*/
+.panel {
+    height: 45px;
+    background-color: aliceblue;
+    box-shadow: 0px 10px 40px black;
+    position: sticky;
+    top: 70px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel marquee {
+    font-size: 1.4rem;
+    font-weight: 900;
+    word-spacing: 0.5rem;
+    letter-spacing: 2px;
+}
+
+/*panel styling ended*/
+
+/*image-slideshow*/
+/* .image-slideshow {
+    height: 610px;
+    width: 90%;
+    background-color: green;
+    margin: auto;
+    box-shadow: 0px 50px 40px black;
+} */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/*image-slideshow ended*/
+
+/*maincontent Container*/
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*main-content box1 started with Moving bike and one card contained info about servicehub*/
+/*main content has 700px of height and 100% of width i made this to display has flex to come side by side*/
+.main-content1 {
+    height: 700px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/*card-content1 has info about service hub and to this card i have added background image has logo usinng background image "contain" with no repeat*/
+.card-content1 {
+    height: 550px;
+    width: 50%;
+    /* background-color: azure; */
+    background-image: url("nav-logouppdated.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(7rem);
+    align-self: center;
+    margin-left: 4.5rem;
+    box-shadow: 0px 10px 20px black;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; */
+    /* padding: 2.5rem; */
+}
+
+
+/*added overlay to the card to blur the image*/
+.card-content1-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
+/*i have used another div to contain the information about service hub*/
+.Shree-Raksha-info {
+    padding-top: 1rem;
+    height: 70%;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width:800px) {
+    .Shree-Raksha-info {
+        overflow: scroll;
+    }
+}
+
+.Shree-Raksha-info p {
+    padding-top: 1rem;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*card-content1 ended*/
+
+/*card-content2 started*/
+/*here i have used animation to move bike from left to right, i started from origin if right=0 and left=900px to origin of left=0 and here i have used animation-fill-mode:forwards thats why image is moving slowly and stops at the left end*/
+.card-content2 {
+    height: 360px;
+    width: 41%;
+    /*Not-setting has the background-image*/
+    /* background-image: url("2Bikefffinal.png");
+    background-size: cover; */
+    position: absolute;
+    animation: bike 7s 0.5s infinite normal forwards;
+    /* overflow: hidden; */
+}
+
+.card-content2 img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: bike 7s 0.5s infinite normal forwards;
+}
+
+@keyframes bike {
+    from {
+        right: 100%;
+        left: 450px;
+    }
+
+    to {
+        right: 0;
+        left: 0;
+    }
+
+}
+
+/*main-content1 is ended*/
+
+/*main-content2 box2 is started*/
+/*it has height of 700px and width of 100% with aliceblue color*/
+.main-content2 {
+    height: 700px;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    padding-top: 2rem;
+    /* border: 5px solid white; */
+    /* box-shadow: 0px 10px 20px black; */
+}
+
+.main-content2 h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.main-content2 p {
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+/*this is the another box to hold the 3 cards*/
+.content2 {
+    height: 80%;
+    width: 90%;
+    /* background-color: rgba(213, 43, 43, 0.76); */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+/*cards design.... outerlay of the card to hold the info. Card size may vary depending on the information(size) we try to store in the card, now card height is upto 500px and width is 400px it is same for all the cards because i have given the same class to each card (Bike-service)*/
+.Bike-service {
+    height: 580px;
+    width: 430px;
+    /* background-color: #fff; */
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
+    box-shadow: 0px 5px 7px black;
+    display: inline-block;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    padding: 3rem;
+}
+
+/* styling image it has height 80% of its parent div(500px)*/
+.Bike-service img {
+    /* width: 90%;
+    height: 60%;
+    background-color: orange; */
+    height: 80%;
+    width: 350px;
+    box-shadow: 0px 10px 30px black;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Bike-service .info p {
+    padding-top: 1rem;
+}
+
+.Bike-service a {
+    height: 50px;
+    width: 150px;
+}
+
+.Bike-service button {
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #DD3333;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/*main-content2 box2 is ended*/
+
+/*main-content3 box3 is started. It has height of 500px and width of 100%*/
+.main-content3 {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    margin-top: 8rem;
+    /* display: inline-block; */
+    /* box-shadow: 0px 10px 20px black; */
+}
+
+/*Here i have one more div (main-content3-info) inside the main-content3 because it is should  hold again to containers one for "unorderd info" and another one for "img"*/
+/*here i have made it has display flex the info and the img to come side by side*/
+.main-content3-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content3 h1 {
+    text-align: center;
+}
+
+/* here i am giving padding from top and left for "ul" because it is the parent for li, if i need to move whole content which is written in "li" i should give padding to the "ul" to move content of li at a time*/
+.steps-list ul {
+    padding-top: 5rem;
+    padding-left: 20rem;
+}
+
+/* here i am giving line-height and font-size and font-weight to the li b/c the content is written in "li"*/
+.steps-list li {
+    line-height: 55px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*setting the img height and width*/
+.three-step-img img {
+    height: 280px;
+    width: 300px;
+    /* float: right; */
+}
+
+/*main-content3 is ended*/
+
+/*main-content4 box4 is started. is the height 400px and width 100%(here i have not mentioned width b/c by default it will considered full width*/
+.main-content4 {
+    height: 400px;
+    /* background-color: rgba(255, 55, 55, 0.861); */
+    background-color: #DD3333;
+}
+
+.main-content4 h1 {
+    padding-top: 2rem;
+}
+
+/* here i am using another div inside the main-content4 to hold another two containers one for "img" and another one for "list info"*/
+/*i have made it has display as flex b/c image and content to come side by side*/
+.Machanic-pic-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*div for img, here i am setting height and width for image*/
+.machanic-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+    box-shadow: 0px 20px 30px black;
+}
+
+/*div for content, here i am height and width for content card to hold list info with some line-height and font-size and font-weight*/
+.machanic-content {
+    height: 300px;
+    width: 800px;
+    line-height: 55px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*this is to fix "Trusted machanics" to the center of the container"*/
+.main-content4 h1 {
+    text-align: center;
+}
+
+/* here i am giving padding from top and left for "ul" because it is the parent for li, if i need to move whole content which is written in "li" i should give padding to the "ul" to move content of li at a time*/
+.main-content4 ul {
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+/*main-content4 is ended*/
+
+
+/*main-content5 box5 is started. It has height 800px with full width*/
+/*main-content5 is divided into 4 containers(div's)*/
+/*1. main-content5 to hold all the upcoming div's and it is the main container*/
+/*2.mission-card it is used to hold image */
+/*3.overlay is used to add overlay to blur the image is the height and width as same as the image*/
+/*4.overlay-card has the informations with height and width 60%, if we won't set the height and width it occupys(information)  whole width it won't look good */
+.main-content5 {
+    height: 800px;
+    background-color: white;
+}
+
+.mission-card {
+    height: 600px;
+    width: 700px;
+    margin-left: 5rem;
+    background-image: url("mission.jpg");
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.overlay-card {
+    height: 60%;
+    width: 60%;
+    line-height: 1.6rem;
+}
+
+.Aboutus-btn button {
+    height: 100%;
+    width: 50%;
+    background-color: #DD3333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.mission-card .overlay {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; /* no-needed*/
+    /* top: 0;
+    left: 0; */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*main-content5 box5 is ended*/
+
+/*footer is started*/
+/* footer has 4 containers to store 4 diffrent kinds of information like 1.logo with info 2.About us 3.our-services 4.address-bar*/
+/*1.footer-first-info has 2 containers one for "logo" and another one for "info"*/
+/*2.About-us has one container "About-us" is only the main-container here it has "h1" and "ul"*/
+/*3.our-services is also doesn't have any containers it is the main-container with "h1" and "ul"*/
+/*4.adress-bar(missied one d here") it has 4 containers "Location", "Email", "call-us", "Follow-us" */
+/*Location has two containers "location-icon" and "address"*/
+/*Email has two containers "email-icon" and "email-id"*/
+/*call-us has two containers "call-icon" and "ph-no"*/
+/*Follow-us has two containers "follow-Us-icon" and "linkdin-name-it has "para" and linkdin icon*/
+/*and in address-bar i have given display-flex for each sub 4 div's separetly, b/c each sub 4 div's has again 2 containers(div's) that two containers should come side by side*/
+.footer {
+    /* height: 500px; */
+    width: 100%;
+    /* background-color: rgb(6, 5, 23); */
+    background: linear-gradient(to left, red, black, black, black, red);
+    color: white;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+.footer-first-info {
+    height: 400px;
+    width: 400px;
+    /* display: flex; */
+    /* padding-left: 1rem; */
+}
+
+.footer-first-info p {
+    padding-top: 1rem;
+}
+
+.footer-first-info .footer-logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.About-us ul {
+    padding-top: 1rem;
+}
+
+.About-us li {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.About-us li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.our-services ul {
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+.our-services h1 {
+    padding-left: 3.7rem;
+}
+
+.our-services li {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.our-services li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.Location {
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.Location .location-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.Email {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.Email .email-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.call-us {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.call-us .call-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.Follow-us {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.Follow-us .follow-Us-icon i {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+/*footer is ended*/
+
+/*Mediaquery started*/
+/*content2*/
+@media (max-width:1209px) {
+    .main-content2 {
+        height: 2000px;
+    }
+
+    .content2 {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* main-content3-info */
+    .main-content3 {
+        height: 600px;
+        margin-top: -18rem;
+    }
+
+    .main-content3-info {
+        flex-wrap: wrap;
+    }
+
+    .main-content3 h1 {
+        padding-top: 2rem;
+    }
+
+    .steps-list ul {
+        padding-left: 0.5rem;
+    }
+
+    .three-step-img img {
+        height: 210px;
+        width: 230px;
+    }
+
+    .Machanic-pic-content {
+        flex-wrap: wrap;
+    }
+
+    .main-content4 {
+        height: 500px;
+    }
+
+    .main-content4 h1 {
+        padding-top: 2rem;
+    }
+
+    .machanic-img img {
+        padding-top: 2rem;
+    }
+
+    .main-content4 ul {
+        padding-top: 2rem;
+        padding-left: 5rem;
+    }
+
+    .main-content4 li {
+        line-height: 2.5rem;
+    }
+
+    .Bike-service {
+        height: 500px;
+        width: 300px;
+    }
+
+    .Bike-service img {
+        height: 80%;
+        width: 250px;
+    }
+
+
+    /* .mission-card {
+        width: 400px;
+    } */
+
+    /* .mission-card .overlay {
+        width: 100%;
+    } */
+
+    /* .overlay-card h1 {
+        line-height: 2.5rem;
+    } */
+}
+
+@media (max-width:477px) {}
+
+@media (max-width:925px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-first-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .About-us {
+        border-bottom: 1px solid rgb(123, 118, 118);
+        height: 400px;
+        /* width: 100%; */
+        /* padding-left: 7.8rem; */
+        padding-top: 2rem;
+    }
+
+    .our-services {
+        padding-top: 2.5rem;
+        border-bottom: 1px solid rgb(123, 118, 118);
+        height: 300px;
+    }
+
+    .adress-bar {
+        padding-top: 2rem;
+    }
+}
+
+@media (min-width:100px) and (max-width:1193px) {
+    .mission-card {
+        width: 300px;
+        margin-left: 1rem;
+    }
+
+    .mission-card .overlay {
+        width: 100%;
+    }
+
+    .overlay-card h1 {
+        line-height: 2.5rem;
+    }
+
+    .overlay-card {
+        height: 80%;
+        width: 90%;
+        line-height: 1.6rem;
+    }
+}
