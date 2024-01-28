@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber</title>
+    <link rel="stylesheet" href="Barber.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="Barber_Shop_img/Barber_Shop_img/logo.png" alt="img" class="logo">
+
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style your hair is style your life.</p>
+
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Meet Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu-btn">
+        <img src="Barber_Shop_img/Barber_Shop_img/menu.png" alt="menuImg" id="menu">
+    </div>
+
+    <script>
+        let menubtn = document.querySelector("#menu-btn");
+        let sidenav = document.querySelector("#sidenav");
+        let menu = document.querySelector("#menu");
+
+        sidenav.style.right = "-250px";
+
+        menubtn.addEventListener("click", function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                menu.src = "Barber_Shop_img/Barber_Shop_img/close.png";
+            }
+            else {
+                sidenav.style.right = "-250px";
+                menu.src = "Barber_Shop_img/Barber_Shop_img /menu.png";
+            }
+
+        })
+    </script>
+</body>
+
+</html>
